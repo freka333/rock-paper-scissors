@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+		<meta charset="utf-8">
+		<title> Kő-Papír-Olló </title>
+		<link rel=stylesheet type="text/css" href="playground.css">
+		<link rel=stylesheet type="text/css" href="settings.css">
+		<script type="text/javascript" src="javascript.js" ></script>
+   </head>
+   <body>
+		<div id="container">
+			<div id="itemButtons">
+				<button onClick="choice(0)"><img src="img/0.png" alt="Kő"></button>
+				<button onClick="choice(1)"><img src="img/1.png" alt="Papír"></button>
+				<button onClick="choice(2)"><img src="img/2.png" alt="Olló"></button>
+			</div>
+			<div id="playground">
+				<div id="playerSide">
+					<div class="profile">
+						<div id="rel">
+							<img id="playerAvatar" class="avatar" src="img/profilePictures/1.jpg" alt="Játékos">
+							<button id="editButton" onClick="openSettingsPanel()"><img src="user-edit-solid.svg" alt="Beállítások"></button>
+						</div>
+						<div id="playerName">Játékos</div>
+					</div>
+					<div class="square">
+						<img id="playerValue" src="img/0.png">
+					</div>
+				</div>
+			
+				<div id="scoreboard">
+					<div id="score">
+						<div id="playerPoint">0</div>
+						<div>:</div>
+						<div id="computerPoint">0</div>
+					</div>
+					<div id="result">
+						<div id="name"> Döntetlen! </div>
+						<button id="nextRound" onclick="reset()">Következő</button>
+					</div>
+				</div>
+			
+				<div id="computerSide">
+					<div class="profile">
+						<div><img class="avatar" src="img/computer1.jpg" alt="Számítógép"></div>
+						<div>Számítógép</div>
+					</div>
+					<div class="square">
+						<img id="computerValue" src="img/0.png">
+					</div>
+				</div>
+				
+				<div id="reset">
+					<button id="resetButton" onClick="newGame()"> Kezdjük előlről!</button>	
+				</div>
+			</div>
+		</div>
+		
+		<div id="bg" onClick="closeSettingsPanel()"></div>
+		
+		<div id="settingsPanel">
+			<button id="closeButton" onClick="closeSettingsPanel()"> <img src="remove-button.svg" alt="Bezárás"> </button>
+			<h1>Beállítások</h1>
+			<p id="descripiton">Válassz egy profilképet és adj meg egy becenevet!</p>
+			<div id="profileImages" class="profileImages">
+				<button onClick="choosePicture(1)"><img class="newAvatar" src="img/profilePictures/1.jpg" alt="Zöld szörny" ></button>
+				<button onClick="choosePicture(2)"><img class="newAvatar" src="img/profilePictures/2.jpg" alt="Piros szörny"></button>
+				<button onClick="choosePicture(3)"><img class="newAvatar" src="img/profilePictures/3.jpg" alt="Sárga szörny"></button>
+				<button onClick="choosePicture(4)"><img class="newAvatar" src="img/profilePictures/4.jpg" alt="Lila szörny"></button>
+				<button onClick="choosePicture(5)"><img class="newAvatar" src="img/profilePictures/5.jpg" alt="Narancs szörny"></button>
+				<button onClick="choosePicture(6)"><img class="newAvatar" src="img/profilePictures/6.jpg" alt="Kék szörny"></button>
+				<button onClick="choosePicture(7)"><img class="newAvatar" src="img/profilePictures/7.jpg" alt="Rózsaszín szörny"></button>
+			</div>
+			<input type="text" id="nameInput" placeholder="Játékos" maxlength="12" autofocus>
+			<span id="inputHelper">Becenév</span>
+			<div id="buttons">
+				<button id="saveButton" onClick="save()"> Mentés </button>
+			</div>
+		</div>
+   </body>
+</html>

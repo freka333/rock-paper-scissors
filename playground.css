@@ -1,0 +1,188 @@
+body {
+	background-color: #000026;
+}
+
+#container {
+	display: flex;
+	padding: 5px;
+	color: #eaeaff;
+	font-family: Noto Sans, sans-serif;
+	font-size: 18px;
+}
+
+#itemButtons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 220px;
+	padding: 5px;
+	margin: 100px 5px 10px 20px;
+}
+
+#itemButtons > button {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	padding: 0;
+	border: none;
+	margin: 15px;
+	box-shadow: 4px 4px #968509;
+}
+
+#itemButtons > button:active, #nextRound:active, #saveButton:active, #resetButton:active {
+	box-shadow: 2px 2px #968509;
+	transform: translate(2px, 2px);
+}
+
+button:focus, input:focus {
+	outline: none;
+}
+
+button:focus-visible {
+	outline: solid 1px white;
+}
+
+button {
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+#itemButtons > button > img {
+	border-radius: 50%;
+	display: block;
+	max-width: 100%;
+}
+
+#playground {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#playerSide, #computerSide {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#computerSide {
+	align-items: flex-start;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 120px;
+	width: 50%;
+	min-width: 150px;
+	margin: 10px;
+}
+
+.avatar {
+	height: 80px;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+#rel {
+	position: relative;
+}
+
+#editButton {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 70px;
+	background-color: #ffea00;
+	box-sizing: border-box;
+	padding: 5px;
+	border: none;
+	box-shadow: -1px 3px 3px #323232;
+}
+
+#editButton > img {
+	width: 100%;
+}
+
+.square {
+  height: 250px;
+  width: 250px;
+  border: 2px dashed grey;
+  border-radius: 20px;
+  margin: 10px 10px 100px 10px;
+}
+
+#scoreboard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 22%;
+}
+
+#score {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 50px;
+	padding: 15px;
+	margin: 10px;;
+}
+
+#score > div {
+	padding: 5px;
+	margin: 5px;
+}
+
+#result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 180px;
+	display: none;
+	text-align: center;
+}
+
+#result > * {
+	padding: 5px;
+	margin: 5px;
+	font-size: 20px;
+	font-family: Trebuchet MS, Tahoma, sans-serif;
+	letter-spacing: 0.6px;
+}
+
+#nextRound, #saveButton, #resetButton {
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #ffea00;
+	border: none;
+	box-shadow: 4px 4px #968509;
+	color: #000026;
+	font-size: 18px;
+	font-family: Trebuchet MS, Tahoma, sans-serif;
+}
+
+#resetButton {
+	width: 100px;
+	height: 40px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#playerValue, #computerValue {
+	width: 90%;
+	margin: 5%;
+	display: none;
+	border-radius: 20px;
+}
+
+#reset {
+	display: flex;
+	align-items: flex-end;
+}
