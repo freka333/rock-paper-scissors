@@ -19,6 +19,8 @@ function choice(item){
 		playerChoice = item;
 		winner();
 		draw();
+		if((pPoint > 0 || cPoint > 0))
+			document.getElementById("reset").style.display = "flex";
 	}
 }
 
@@ -66,6 +68,7 @@ function newGame(){
 	cPoint = 0;
 	document.getElementById("playerPoint").innerText = pPoint;
 	document.getElementById("computerPoint").innerText = cPoint;
+	document.getElementById("reset").style.display = "none";
 }
 
 function mark(item){

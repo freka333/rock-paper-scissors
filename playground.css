@@ -1,13 +1,22 @@
+html {
+	height: 100%;
+}
+
 body {
 	background-color: #000026;
+	height: 100%;
+	margin: 0;
 }
 
 #container {
 	display: flex;
-	padding: 5px;
+	justify-content: center;
+	align-items: center;
 	color: #eaeaff;
 	font-family: Noto Sans, sans-serif;
 	font-size: 18px;
+	width: 100%;
+	height: 100%;
 }
 
 #itemButtons {
@@ -79,7 +88,7 @@ button {
 	height: 120px;
 	width: 50%;
 	min-width: 150px;
-	margin: 10px;
+	margin: 18px 10px;
 }
 
 .avatar {
@@ -115,7 +124,7 @@ button {
   width: 250px;
   border: 2px dashed grey;
   border-radius: 20px;
-  margin: 10px 10px 100px 10px;
+  margin: 40px 10px 110px 10px;
 }
 
 #scoreboard {
@@ -130,7 +139,7 @@ button {
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 50px;
-	padding: 15px;
+	padding: 20px;
 	margin: 10px;;
 }
 
@@ -146,6 +155,7 @@ button {
 	margin-bottom: 180px;
 	display: none;
 	text-align: center;
+	line-height: 25px;
 }
 
 #result > * {
@@ -168,6 +178,15 @@ button {
 	font-family: Trebuchet MS, Tahoma, sans-serif;
 }
 
+#nextRound {
+	width: 115px;
+}
+
+#reset {
+	display: none;
+	align-items: flex-end;
+}
+
 #resetButton {
 	width: 100px;
 	height: 40px;
@@ -180,9 +199,4 @@ button {
 	margin: 5%;
 	display: none;
 	border-radius: 20px;
-}
-
-#reset {
-	display: flex;
-	align-items: flex-end;
 }
