@@ -56,25 +56,27 @@
 			</div>
 		</div>
 		
-		<div id="bg" onClick="closeSettingsPanel()"></div>
+		<div id="dark-bg" onClick="closeSettingsPanel()"> </div>
 		
-		<div id="settingsPanel">
-			<button id="closeButton" onClick="closeSettingsPanel()"> <img src="remove-button.svg" alt="Bezárás"> </button>
-			<h1>Beállítások</h1>
-			<p id="descripiton">Válassz egy profilképet és adj meg egy becenevet!</p>
-			<div id="profileImages" class="profileImages">
-				<button onClick="choosePicture(1)"><img class="newAvatar" src="img/profilePictures/1.jpg" alt="Zöld szörny" ></button>
-				<button onClick="choosePicture(2)"><img class="newAvatar" src="img/profilePictures/2.jpg" alt="Piros szörny"></button>
-				<button onClick="choosePicture(3)"><img class="newAvatar" src="img/profilePictures/3.jpg" alt="Sárga szörny"></button>
-				<button onClick="choosePicture(4)"><img class="newAvatar" src="img/profilePictures/4.jpg" alt="Lila szörny"></button>
-				<button onClick="choosePicture(5)"><img class="newAvatar" src="img/profilePictures/5.jpg" alt="Narancs szörny"></button>
-				<button onClick="choosePicture(6)"><img class="newAvatar" src="img/profilePictures/6.jpg" alt="Kék szörny"></button>
-				<button onClick="choosePicture(7)"><img class="newAvatar" src="img/profilePictures/7.jpg" alt="Rózsaszín szörny"></button>
-			</div>
-			<input type="text" id="nameInput" placeholder="Játékos" maxlength="12" autofocus>
-			<span id="inputHelper">Becenév</span>
-			<div id="buttons">
-				<button id="saveButton" onClick="save()"> Mentés </button>
+		<div id="transparent-bg">
+			<div id="settingsPanel">
+				<button id="closeButton" onClick="closeSettingsPanel()"> <img src="remove-button.svg" alt="Bezárás"> </button>
+				<h1>Beállítások</h1>
+				<p id="descripiton">Válassz egy profilképet és adj meg egy becenevet!</p>
+				<div id="profileImages" class="profileImages">
+					<button onClick="choosePicture(1)"><img class="newAvatar" src="img/profilePictures/1.jpg" alt="Zöld szörny" ></button>
+					<button onClick="choosePicture(2)"><img class="newAvatar" src="img/profilePictures/2.jpg" alt="Piros szörny"></button>
+					<button onClick="choosePicture(3)"><img class="newAvatar" src="img/profilePictures/3.jpg" alt="Sárga szörny"></button>
+					<button onClick="choosePicture(4)"><img class="newAvatar" src="img/profilePictures/4.jpg" alt="Lila szörny"></button>
+					<button onClick="choosePicture(5)"><img class="newAvatar" src="img/profilePictures/5.jpg" alt="Narancs szörny"></button>
+					<button onClick="choosePicture(6)"><img class="newAvatar" src="img/profilePictures/6.jpg" alt="Kék szörny"></button>
+					<button onClick="choosePicture(7)"><img class="newAvatar" src="img/profilePictures/7.jpg" alt="Rózsaszín szörny"></button>
+				</div>
+				<input type="text" id="nameInput" placeholder="Játékos" maxlength="12" autofocus>
+				<span id="inputHelper">Becenév</span>
+				<div id="buttons">
+					<button id="saveButton" onClick="save()"> Mentés </button>
+				</div>
 			</div>
 		</div>
    </body>

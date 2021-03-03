@@ -1,21 +1,30 @@
-#bg {
+#dark-bg {
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: black;
-	opacity: 0.95;
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+#transparent-bg {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
 }
 
 #settingsPanel {
 	display: none;
-	position: absolute;
-	top: 20%;
-	left: 20%;
-	width: 60%;
-	height: 60%;
+	width: 800px;
+	padding: 10px 0;
 	border: 3px solid #968509;
 	border-radius: 20px;
 	background-color: #000026;
@@ -25,6 +34,8 @@
 	flex-direction: column;
 	align-items: center;
 	color: #eaeaff;
+	position: relative;
+	pointer-events: all;
 }
 
 #closeButton {
@@ -94,5 +105,5 @@ h1 {
 }
 
 #saveButton {
-	margin-top: 25px;
+	margin: 25px 0;
 }

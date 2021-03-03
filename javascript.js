@@ -79,7 +79,8 @@ function deselect(item){
 }
 
 function openSettingsPanel() {
-	document.getElementById("bg").style.display = "inherit";
+	document.getElementById("dark-bg").style.display = "flex";
+	document.getElementById("transparent-bg").style.display = "flex";
 	document.getElementById("settingsPanel").style.display = "flex";
 	mark(document.getElementById("profileImages").getElementsByTagName("*")[convert(savedPicture)]);
 	document.getElementById("nameInput").value = userName;
@@ -108,6 +109,7 @@ function closeSettingsPanel() {
 		deselect(document.getElementById("profileImages").getElementsByTagName("*")[convert(selectedPicture)]);
 		selectedPicture = savedPicture;
 	}
-	document.getElementById("bg").style.display = "none";
+	document.getElementById("dark-bg").style.display = "none";
+	document.getElementById("transparent-bg").style.display = "none";
 	document.getElementById("settingsPanel").style.display = "none";
 }
